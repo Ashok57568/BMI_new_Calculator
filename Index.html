@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Body Mass Index (BMI) Calculator</h1>
+        Your Height (cm):
+        <input type="number" class="input" id="height-cm" value="180" placeholder="Enter your height in cm">
+        Your Height (feet):
+        <input type="number" class="input" id="height-ft" placeholder="Feet">
+        <input type="number" class="input" id="height-in" placeholder="Inches">
+        Your Weight (kg):
+        <input type="number" class="input" id="weight" value="80" placeholder="Enter your weight in kg">
+        Your Age:
+        <input type="number" class="input" id="age" value="30" placeholder="Enter your age">
+        Your Gender:
+        <select class="input" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <button class="btn" id="btn">Compute BMI</button>
+        <input disabled type="text" class="input" id="bmi-result">
+        <h4 class="info-text">Weight Condition: <span id="weight-condition"></span></h4>
+        
+        <p class="disclaimer">Disclaimer: The Body Mass Index (BMI) calculated here may not accurately represent the health status of pregnant women due to the unique physiological changes they experience during pregnancy. Please consult with a healthcare professional for personalized guidance and assessment.</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
